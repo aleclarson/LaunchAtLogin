@@ -1,4 +1,7 @@
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
-FOUNDATION_EXPORT double LaunchAtLoginVersionNumber;
-FOUNDATION_EXPORT const unsigned char LaunchAtLoginVersionString[];
+@interface LaunchAtLogin : NSObject
+
+@property (class, nonatomic, getter=isEnabled) BOOL enabled;
+
+@end

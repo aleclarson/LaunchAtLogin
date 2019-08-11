@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70347E27230073FC00A4F09B /* LaunchAtLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347E26230073FC00A4F09B /* LaunchAtLogin.m */; };
+		70347E2C2300793D00A4F09B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70347E2B2300793D00A4F09B /* main.m */; };
 		E32E9B681EB87D7B000FEEE9 /* LaunchAtLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = E32E9B661EB87D7B000FEEE9 /* LaunchAtLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E32E9B6F1EB87DC5000FEEE9 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E9B6E1EB87DC5000FEEE9 /* LaunchAtLogin.swift */; };
-		E32E9B771EB87EA3000FEEE9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E9B761EB87EA3000FEEE9 /* main.swift */; };
 		E32E9B861EB8845E000FEEE9 /* LaunchAtLoginHelper.app in Resources */ = {isa = PBXBuildFile; fileRef = E32E9B741EB87EA3000FEEE9 /* LaunchAtLoginHelper.app */; };
 		E32E9B931EB889AE000FEEE9 /* copy-helper.sh in Resources */ = {isa = PBXBuildFile; fileRef = E32E9B921EB889AE000FEEE9 /* copy-helper.sh */; };
 /* End PBXBuildFile section */
@@ -25,12 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70347E26230073FC00A4F09B /* LaunchAtLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLogin.m; sourceTree = "<group>"; };
+		70347E2B2300793D00A4F09B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E32E9B631EB87D7B000FEEE9 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LaunchAtLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32E9B661EB87D7B000FEEE9 /* LaunchAtLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = LaunchAtLogin.h; sourceTree = "<group>"; usesTabs = 1; };
 		E32E9B671EB87D7B000FEEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E32E9B6E1EB87DC5000FEEE9 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LaunchAtLogin.swift; sourceTree = "<group>"; usesTabs = 1; };
 		E32E9B741EB87EA3000FEEE9 /* LaunchAtLoginHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchAtLoginHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E32E9B761EB87EA3000FEEE9 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = main.swift; sourceTree = "<group>"; usesTabs = 1; };
 		E32E9B7F1EB87EA3000FEEE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32E9B921EB889AE000FEEE9 /* copy-helper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; lineEnding = 0; path = "copy-helper.sh"; sourceTree = "<group>"; usesTabs = 1; };
 		E3B8C38A20C0003300272EC0 /* LaunchAtLoginHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchAtLoginHelper.entitlements; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		E32E9B651EB87D7B000FEEE9 /* LaunchAtLogin */ = {
 			isa = PBXGroup;
 			children = (
-				E32E9B6E1EB87DC5000FEEE9 /* LaunchAtLogin.swift */,
+				70347E26230073FC00A4F09B /* LaunchAtLogin.m */,
 				E32E9B661EB87D7B000FEEE9 /* LaunchAtLogin.h */,
 				E32E9B921EB889AE000FEEE9 /* copy-helper.sh */,
 				E32E9B671EB87D7B000FEEE9 /* Info.plist */,
@@ -87,7 +87,7 @@
 		E32E9B751EB87EA3000FEEE9 /* LaunchAtLoginHelper */ = {
 			isa = PBXGroup;
 			children = (
-				E32E9B761EB87EA3000FEEE9 /* main.swift */,
+				70347E2B2300793D00A4F09B /* main.m */,
 				E32E9B7F1EB87EA3000FEEE9 /* Info.plist */,
 				E3B8C38A20C0003300272EC0 /* LaunchAtLoginHelper.entitlements */,
 			);
@@ -156,7 +156,7 @@
 				TargetAttributes = {
 					E32E9B621EB87D7B000FEEE9 = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1010;
 					};
 					E32E9B731EB87EA3000FEEE9 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32E9B6F1EB87DC5000FEEE9 /* LaunchAtLogin.swift in Sources */,
+				70347E27230073FC00A4F09B /* LaunchAtLogin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32E9B771EB87EA3000FEEE9 /* main.swift in Sources */,
+				70347E2C2300793D00A4F09B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +292,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -348,8 +345,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALID_ARCHS = x86_64;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -377,9 +372,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -404,7 +396,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -423,7 +414,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -442,7 +432,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
