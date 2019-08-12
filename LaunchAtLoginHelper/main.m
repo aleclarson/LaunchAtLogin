@@ -8,7 +8,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
 	NSString *helperId = NSBundle.mainBundle.bundleIdentifier;
-	NSString *bundleId = [helperId substringToIndex:@"-LaunchAtLoginHelper".length];
+	NSString *bundleId = [helperId substringToIndex:helperId.length - @"-LaunchAtLoginHelper".length];
 	
 	if ([NSRunningApplication runningApplicationsWithBundleIdentifier:bundleId].count == 0) {
 		NSArray<NSString *> *parts = NSBundle.mainBundle.bundlePath.pathComponents;
