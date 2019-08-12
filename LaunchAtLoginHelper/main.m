@@ -12,7 +12,7 @@
 	
 	if ([NSRunningApplication runningApplicationsWithBundleIdentifier:bundleId].count == 0) {
 		NSArray<NSString *> *parts = NSBundle.mainBundle.bundlePath.pathComponents;
-		NSString *mainPath = [NSString pathWithComponents:[parts subarrayWithRange:(NSRange){0, parts.count - 5}]];
+		NSString *mainPath = [NSString pathWithComponents:[parts subarrayWithRange:(NSRange){0, parts.count - 4}]];
 		[NSWorkspace.sharedWorkspace launchApplication:mainPath];
 	}
 	
