@@ -10,13 +10,10 @@ cp -rf "$origin_helper_path" "$helper_dir/"
 
 defaults write "$helper_path/Contents/Info" CFBundleIdentifier -string "$PRODUCT_BUNDLE_IDENTIFIER-LaunchAtLoginHelper"
 
-if [[ -n $CODE_SIGN_ENTITLEMENTS ]]; then
-	codesign --force --entitlements="$CODE_SIGN_ENTITLEMENTS" --options=runtime --sign="$CODE_SIGN_IDENTITY" "$helper_path"
-else
-	codesign --force --options=runtime --sign="$CODE_SIGN_IDENTITY" "$helper_path"
-fi
+codesign --force --entitlements="$(dirname "$origin_helper_path")/LaunchAtLogin.entitlements" --options=runtime --sign="$CODE_SIGN_IDENTITY" "$helper_path"
 
 if [[ $CONFIGURATION != "Debug" ]]; then
 	rm -rf "$origin_helper_path"
 	rm "$(dirname "$origin_helper_path")/copy-helper.sh"
+	rm "$(dirname "$origin_helper_path")/LaunchAtLogin.entitlements"
 fi
