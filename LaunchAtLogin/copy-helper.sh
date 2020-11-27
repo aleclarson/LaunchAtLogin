@@ -16,7 +16,7 @@ else
 	codesign --force --options=runtime --sign="$CODE_SIGN_IDENTITY" "$helper_path"
 fi
 
-if [[ $CONFIGURATION == "Release" ]]; then
+if [[ $CONFIGURATION != "Debug" ]]; then
 	rm -rf "$origin_helper_path"
 	rm "$(dirname "$origin_helper_path")/copy-helper.sh"
 fi
